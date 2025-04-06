@@ -12,7 +12,7 @@ const PORT = process.env.PORT || 5000;
 
 // Middleware
 app.use(cors({
-  origin: 'https://email-scheduler-pi.vercel.app/',
+  origin: 'https://email-scheduler-pi.vercel.app',
   credentials: true,
 }));
 app.use(express.json({ limit: '10mb' }));
