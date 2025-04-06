@@ -6,7 +6,7 @@
 export const saveFlow = async (flowData) => {
     try {
       console.log(JSON.stringify(flowData))
-      const response = await fetch('http://localhost:4000/api/setflow', {
+      const response = await fetch('https://email-scheduler-5lgq.onrender.com/api/setflow', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -31,7 +31,7 @@ export const saveFlow = async (flowData) => {
    */
   export const getFlows = async () => {
     try {
-      const response = await fetch('http://localhost:4000/api/getflow');
+      const response = await fetch('https://email-scheduler-5lgq.onrender.com/api/getflow');
       
       if (!response.ok) {
         throw new Error(`HTTP error! Status: ${response.status}`);
@@ -51,7 +51,7 @@ export const saveFlow = async (flowData) => {
    */
   export const getFlowById = async (id) => {
     try {
-      const response = await fetch(`http://localhost:4000/api/flows/${id}`);
+      const response = await fetch(`https://email-scheduler-5lgq.onrender.com/flows/${id}`);
       
       if (!response.ok) {
         throw new Error(`HTTP error! Status: ${response.status}`);
