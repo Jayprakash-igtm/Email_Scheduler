@@ -36,7 +36,6 @@ const startServer = async () => {
     
     app.use('/api', flowsRouter);
 
-    app.get('/', (req,res)=>{ res.status(200).json({message: "iahdbbijadjn"})});
     
 
     app.use((err, req, res, next) => {
